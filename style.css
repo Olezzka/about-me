@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body {
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: normal;
+    background-color: #f1f1f1;
+    color: #1c2944;
+}
+
+
+/* links */
+a {
+    color: #000;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration:underline;
+}
+
+a:active {
+    color: blue;
+}
+
+a:visited {
+    color: rgb(133, 133, 133);
+}
+
+
+/* ul and li */
+ul {
+    list-style: none;
+    margin: 0;
+    border-left: 3px solid #2d4780;
+    border-radius: 10px;
+    padding: 5px 0 5px 10px;
+    margin-left: 15px;
+}
+
+li {
+    padding-top: 3px;
+}
+
+
+/* Table */
+th, td, tr {
+    margin: 0;
+    padding: 0;
+}
+
+table {
+    width: 100%;
+    border-spacing: 0px;
+    border-collapse: collapse;
+}
+
+tr {
+    border-bottom: 1px solid black;
+}
+
+td {
+    padding-top: 6px;
+}
+
+tbody tr:hover {
+    background-color: rgba(177, 177, 177, 0.541);
+    cursor: pointer;
+}
+
+
+/* Other HTML */
+.container {
+    max-width: 700px;
+    margin: auto;
+    margin-top: 30px;
+}
+
+.avatar {
+    width: 200px;
+    box-shadow: 4px 4px 14px rgba(0, 0, 0, 0.25);
+    border-radius: 20px; 
+}
+
+.info {
+    display: flex;
+}
+
+.info img {
+    box-shadow: 4px 4px 14px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+}
+
+@media (max-width: 650px) {
+    .info {
+        display: block;
+        text-align: center;
+    }
+
+    .info img {
+        display: block;
+        margin: 0 auto;
+    }
+}
+
+.info-text {
+    margin-left: 20px;
+}
+
+.info-text p {
+    font-style: italic;
+    font-weight: bold;
+    color: #2e4985;
+}
+
+.info-description p {
+    color: #2e4a856e;
+    margin: 0;
+}
+
+.card {
+    background-color: #7cabfc52;
+    padding: 10px;
+    margin-top: 20px;
+    border-radius: 5px;
+    border-left: 3px solid #1c2944;
+}
+
+.bg-orange {
+    background-color: #fca5725e;
+}
+
+.bg-gray {
+    background-color: #737d8d41;
+}
+
+.jobs {
+    text-align: center;
+}
+
+.jobs td:nth-child(2) {
+    color: #86898f;
+}
+
+.btn {
+    background-color: #000;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 3px;
+    font-family: inherit;
+    cursor: pointer;
+    background-color: rgb(192, 69, 41);
+}
+
+.btn:hover {
+    background-color: rgb(241, 59, 19);
+}
+
+.flex {
+    display: flex;
+}
+
+.contacts {
+    color:rgb(49, 49, 49);
+}
+
+.group-contacts {
+    display: flex;
+}
+
+.contact {
+    width: 50%;
+}
+
+.contact:last-child {
+    margin-left: 20px;
+}
+
+.card-contact-me {
+    margin-bottom: 50px;
+}
+
+.input-style {
+    width: 100%;
+    padding: 10px 0;
+    border: none;
+    background-color: inherit;
+    font-weight: bold;
+    border-bottom: 1px solid gray;
+    outline: none;
+    font-size: 1rem;
+}
+
+.message-send {
+    margin-top: 15px;
+}
+
+@media (max-width: 650px) {
+    .group-contacts {
+        display: block;
+    }
+
+    .contact:last-child {
+        margin-left: 0px;
+    }
+
+    .contact {
+        width: 100%;
+    }
+
+    .contact {
+        margin-bottom: 15px;
+    }
+
+    .message-send {
+        margin-top: 0px;
+    }
+
+    .contacts-header {
+        text-align: center;
+    }
+
+    .card-contact-me {
+        margin-bottom: 0px;
+    }
+}

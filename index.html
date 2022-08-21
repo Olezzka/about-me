@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="keywords" content="oleg, folder, portfolio, about me">
+        <meta name="description" content="Это сайт - портфолио Олега"> 
+        <link rel="stylesheet" href="style.css">
+        <title>Портфолио Олега</title>
+    </head>
+<body>
+    <div class="container">
+        <div class="info">
+            <img class="avatar" src="avatar.png" alt="avatarka">
+
+            <div class="info-text">
+                <h1>Олег</h1>
+                <div class="info-description">
+                    <p>Я просто сделал этот сайт для <strong><em>тестирования</em></strong> пройденного материала</p>
+                    <p>Пишу на <strong>HTML</strong>, смотрю <strong>видео</strong>, читаю этот <strong>текст</strong></p>
+                </div>
+
+                <p><strong>Список сайтов которые я чаще всего посещаю:</strong></p>
+                <a href="https://yandex.ru" target="_blank">Yandex</a> |
+                <a href="https://google.com" target="_blank">Google</a> |
+                <a href="https://youtube.com" target="_blank">Youtube</a> |
+                <a href="https://duckduckgo.com" target="_blank">Duckduckgo</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <h2>Мои хобби</h2>
+            <ul>
+                <li>Программирование:
+                    <ul>
+                        <li>Сайты</li>
+                        <li>Боты</li>
+                        <li>Ардуино</li>
+                    </ul>
+                </li>
+                <li>Езда на велосипеде</li>
+                <li>Иногда много спать ;)</li>
+            </ul>
+        </div>
+
+        <div class="card bg-orange">
+            <h2>Опыт работы</h2>
+            <table class="jobs">
+                <thead>
+                    <tr>
+                        <th>Название</th>
+                        <th>Должность</th>
+                        <th>Год</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Учеба в школе</td>
+                        <td>Школьник</td>
+                        <td>2008 - 2017</td>
+                    </tr>
+                    <tr>
+                        <td>Учеба в колледже</td>
+                        <td>Студент</td>
+                        <td>2017 - 2021</td>
+                    </tr>
+                    <tr>
+                        <td>Работа на заводе</td>
+                        <td>Рабочий</td>
+                        <td>2021 - по сей день</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="card card-contact-me bg-gray">
+            <h2 class="contacts-header">Связаться со мной</h2>
+            <form class="contacts">
+                <div class="group-contacts">
+                    <div class="contact">
+                        <label for="text">Ваше имя: </label>
+                        <input class="input-style" type="text" id="text" placeholder="Введите имя">
+                    </div>
+                    <div class="contact">
+                        <label for="email">Ваше email: </label>
+                        <input class="input-style" type="email" id="email" placeholder="Введите email">
+                    </div>
+                </div>
+                <div class="message-send">
+                    <label for="message">Ваше сообщение: </label>
+                    <br>
+                    <textarea class="input-style" name="" id="message" cols="25" rows="5" placeholder="Введите сообщение..."></textarea>
+                </div>
+                <button class="btn" type="submit">Отправить!</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
